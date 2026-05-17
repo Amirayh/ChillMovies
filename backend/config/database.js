@@ -4,6 +4,7 @@ export default {
     password: process.env.DB_PASS || 'mysqlroot',
     database: process.env.DB_NAME || 'chillmovies',
     host:     process.env.DB_HOST || '127.0.0.1',
+    port:     12880,
     dialect:  'mysql',
   },
 };
