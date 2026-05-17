@@ -6,6 +6,7 @@ import "dotenv/config";
 import authRoutes from './routes/auth.js';
 import contentRoutes from './routes/contents.js';
 import favoriteRoutes from './routes/favorites.js';
+import path from 'path';
 
 const app = express();
 
@@ -14,7 +15,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
 // Fichiers statiques (uploads d'images) — AVANT helmet
-app.use("/uploads", express.static("uploads"));
+app.use('/uploads', express.static(path.join(process.cwd(), 'uploads')));
 
 // Sécurise les en-têtes HTTP (configuré pour ne pas bloquer les images)
 app.use(helmet({
