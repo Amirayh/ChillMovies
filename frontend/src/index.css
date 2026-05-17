@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Poppins', sans-serif;
+  --font-display: 'Oswald', sans-serif; /* Police Expanded/Gothique pour les titres */
+  --color-primary-start: #ec4899; /* pink-500 */
+  --color-primary-end: #a855f7; /* purple-500 */
+  --color-background: #09090b; /* zinc-950 - fond sombre cinema */
+}
+
+/* Base Styles */
+@layer base {
+  html, body {
+    @apply bg-background text-zinc-100 font-sans antialiased min-h-screen;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* Utilitaires personnalisés */
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent;
+  }
+  
+  .title-gothic {
+    @apply font-display tracking-widest uppercase;
+  }
+}
