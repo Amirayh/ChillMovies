@@ -47,7 +47,7 @@ const ContentCard = ({ content }) => {
         {/* L'image de l'affiche */}
         {poster_url ? (
           <img 
-            src={`http://localhost:3000${poster_url}`} // À adapter avec l'URL de base backend
+            src={`https://chillmovies.onrender.com${poster_url}`} // À adapter avec l'URL de base backend
             alt={`Affiche de ${title}`} 
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
           />
