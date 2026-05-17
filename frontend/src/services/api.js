@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // Configuration de base pour toutes les requêtes Axios
 const api = axios.create({
-  baseURL: 'http://localhost:3000', // Le backend tourne sur le port 3000
+  baseURL: 'https://chillmovies.onrender.com', // Le backend tourne sur le port 3000
 });
 
 // Intercepteur pour ajouter automatiquement le token JWT à chaque requête
