@@ -82,7 +82,7 @@ Contrairement aux bases de données publiques et impersonnelles, ChillMovies met
 
 Le projet suit une architecture moderne découplée de type **Client-Serveur** :
 
-```mermaid
+
 graph LR
     subgraph Frontend (React / Vite)
         A[Interface Utilisateur] -->|Requêtes HTTP + JWT| B[Service API / Axios]
