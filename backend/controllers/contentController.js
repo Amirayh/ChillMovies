@@ -30,7 +30,10 @@ export const createContent = async (req, res) => {
 
 export const getAllContent = async (req, res) => {
   try {
-    const contents = await Content.findAll({ order: [['created_at', 'DESC']] });               
+    const contents = await Content.findAll({ 
+      where: { created_by: req.user.user_id },
+      order: [['created_at', 'DESC']] 
+    });               
     res.status(200).json(contents); 
   } catch (error) {
     console.error("Error fetching content:", error);
