@@ -79,7 +79,7 @@ const Profile = () => {
               <div className="w-24 h-24 rounded-full bg-zinc-900 border-4 border-zinc-900 flex items-center justify-center overflow-hidden">
                 {user.avatar_url ? (
                   <img 
-                    src={`http://localhost:3000${user.avatar_url}`} 
+                    src={`https://chillmovies.onrender.com${user.avatar_url}`} 
                     alt="Avatar" 
                     className="w-full h-full object-cover"
                   />
