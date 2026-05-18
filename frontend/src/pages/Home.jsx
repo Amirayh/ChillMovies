@@ -39,7 +39,7 @@ const Home = () => {
           <div className="absolute inset-0 bg-zinc-900 overflow-hidden">
             {featuredContent.poster_url && (
               <img 
-                src={`http://localhost:3000${featuredContent.poster_url}`} 
+                src={`https://chillmovies.onrender.com${featuredContent.poster_url}`} 
                 alt={featuredContent.title}
                 className="w-full h-full object-cover opacity-50"
               />
