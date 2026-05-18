@@ -64,7 +64,7 @@ const ContentDetail = () => {
         <div className="w-full md:w-1/3 flex-shrink-0">
           {content.poster_url ? (
             <img 
-              src={`http://localhost:3000${content.poster_url}`} 
+              src={`https://chillmovies.onrender.com${content.poster_url}`} 
               alt={content.title}
               className="w-full rounded-2xl shadow-2xl shadow-pink-500/10 border border-zinc-800"
             />
