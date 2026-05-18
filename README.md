@@ -239,11 +239,11 @@ Voici quelques évolutions architecturales et fonctionnelles recommandées pour 
 * **Authentification Sociale** : Ajouter la connexion via Google ou GitHub (OAuth 2.0).
 * **Pagination & Recherche Avancée** : Ajouter un système de pagination côté serveur et un filtrage par mots-clés ou notes.
 * **Intégration d'API Externe** : Connecter l'application à l'API [TMDb](https://www.themoviedb.org/) pour préremplir automatiquement les informations et les affiches des films.
-* **Téléchargement Cloud** : Migrer le stockage local des images (`multer`) vers un service Cloud (comme Cloudinary ou AWS S3) pour faciliter le déploiement multi-serveurs.
+
 
 ---
 
-## ✍️ Auteur & Licence
+## ✍️ Auteur
 
-- **Développeur & Architecte** : [Votre Nom / Pseudo](https://github.com/votre-compte)
-- **Licence** : Ce projet est sous licence [ISC](https://opensource.org/licenses/ISC).
+- **Développeur & Architecte** : [Amira Yahiaoui / AmiraYh](https://github.com/Amirayh)
+
